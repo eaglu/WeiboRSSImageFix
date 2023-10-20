@@ -1,0 +1,9 @@
+#!name = 修复微博RSS图片显示
+#!desc = 修复微博RSS图片显示
+#!author = eaglu
+#!homepage = https://github.com/eaglu/WeiboRSSImageFix
+
+[Rewrite]
+https://.*\.sinaimg\.cn/.* header-add referer https://weibo.com
+[Mitm]
+hostname = *.sinaimg.cn
