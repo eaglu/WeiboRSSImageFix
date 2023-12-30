@@ -1,0 +1,10 @@
+#SUBSCIRIBED
+name: 修复微博RSS图片
+desc: >-
+  修复微博RSS图片
+
+http:
+  mitm:
+    - "*.sinaimg.cn"
+  header-rewrite:
+    - ^https://.*\.sinaimg\.cn/.* request-add referer https://weibo.com
